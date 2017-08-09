@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Campinas</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fcfcfc;
+    }
+
+    .center-div {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+    }
+
+    .padre {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+    }
+
+    .mensaje {
+      margin-top: 60%
+    }
+
+    .wine {
+      position: relative;
+      margin: auto;
+      width: 80px;
+      height: 95px;
+      background-color: rgba(228, 162, 160, 1.0);
+      border: 5px solid #000;
+      border-radius: 2px 2px 0px 0px;
+      border-bottom-right-radius: 40px 35px;
+      border-bottom-left-radius: 40px 35px;
+      box-shadow: 0px 0px 0px 3px #fff inset,
+      -20px -40px 0px -17px rgba(118, 10, 35, 1.0) inset,
+      -23px -44px 0px -17px #fff inset,
+      -40px -65px 0px -17px rgba(198, 23, 69, 1.0) inset,
+      -43px -69px 0px -17px #fff inset;
+      animation: fill 2s infinite;
+    }
+
+    .wine:before,
+    .wine:after {
+      content: '';
+      position: absolute;
+      background-color: #000;
+    }
+
+    .wine:before {
+      top: 100%;
+      left: 32px;
+      width: 6px;
+      height: 100px;
+    }
+
+    .wine:after {
+      top: 185px;
+      left: 5px;
+      width: 60px;
+      height: 10px;
+      border-radius: 30px 30px 0px 0px;
+    }
+
+    @keyframes fill {
+      from {
+        background-color: rgba(228, 162, 160, 0);
+        box-shadow: 3px 0px #fff inset,
+        -3px 0px #fff inset,
+        -3px -3px #fff inset,
+        3px -3px #fff inset,
+        0px 3px #fff inset,
+        0px -3px #fff inset,
+        -20px -40px 0px -17px rgba(118, 10, 35, 0) inset,
+        -23px -44px 0px -17px #fff inset,
+        -40px -65px 0px -17px rgba(198, 23, 69, 0) inset,
+        -43px -69px 0px -17px #fff inset;
+      }
+      10% {
+        box-shadow: 3px 0px #fff inset,
+        -3px 0px #fff inset,
+        -3px -3px #fff inset,
+        3px -3px #fff inset,
+        0px 3px #fff inset,
+        0px -3px #fff inset,
+        -20px -40px 0px -17px rgba(118, 10, 35, 1) inset,
+        -23px -44px 0px -17px #fff inset,
+        -40px -65px 0px -17px rgba(198, 23, 69, 0) inset,
+        -43px -69px 0px -17px #fff inset;
+      }
+      20% {
+        background-color: rgba(228, 162, 160, 0);
+        box-shadow: 3px 0px #fff inset,
+        -3px 0px #fff inset,
+        -3px -3px #fff inset,
+        3px -3px #fff inset,
+        0px 3px #fff inset,
+        0px -3px #fff inset,
+        -20px -40px 0px -17px rgba(118, 10, 35, 1) inset,
+        -23px -44px 0px -17px #fff inset,
+        -40px -65px 0px -17px rgba(198, 23, 69, 1) inset,
+        -43px -69px 0px -17px #fff inset;
+      }
+      30% {
+        background-color: rgba(228, 162, 160, 1.0);
+        box-shadow: 3px 0px #fff inset,
+        -3px 0px #fff inset,
+        -3px -3px #fff inset,
+        3px -3px #fff inset,
+        0px 3px #fff inset,
+        0px -3px #fff inset,
+        -20px -40px 0px -17px rgba(118, 10, 35, 1) inset,
+        -23px -44px 0px -17px #fff inset,
+        -40px -65px 0px -17px rgba(198, 23, 69, 1) inset,
+        -43px -69px 0px -17px #fff inset;
+      }
+      to {
+        background-color: rgba(228, 162, 160, 1.0);
+        box-shadow: 3px 0px #fff inset,
+        -3px 0px #fff inset,
+        -3px -3px #fff inset,
+        3px -3px #fff inset,
+        0px 3px #fff inset,
+        0px -3px #fff inset,
+        -20px -40px 0px -17px rgba(118, 10, 35, 1.0) inset,
+        -23px -44px 0px -17px #fff inset,
+        -40px -65px 0px -17px rgba(198, 23, 69, 1.0) inset,
+        -43px -69px 0px -17px #fff inset;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <app-root>
+    <div class="center-div">
+      <div class="padre">
+        <div class="wine"></div>
+        <div class="mensaje">Cargando...</div>
+      </div>
+    </div>
+  </app-root>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+<script src="./assets/js/clipboard-1.7.1.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script type="text/javascript">
+  (function () {
+    var bur = document.querySelector('.nav-toggle');
+    var menu = document.querySelector('.nav-menu');
+    bur.addEventListener('click', function () {
+      bur.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  })();
+</script>
+
+</html>
