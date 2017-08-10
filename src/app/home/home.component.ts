@@ -8,7 +8,7 @@ import { Title }     from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
 
-  Valor = 'Estas es la pagina de inicio';
+  Valor: String = 'estas es la pagina de inicio (texto con pipas)';
   constructor(private titulo: Title) {
     this.titulo.setTitle('Inicio');
    }
