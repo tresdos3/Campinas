@@ -16,14 +16,17 @@
                 <span></span>
                 <span></span>
       </span>
-
       <div class="nav-right nav-menu" style="padding: 15px; background-color: #850421;">
-        <a class="nav-item is-tab is-active" routerLink="/" routerLinkActive="active" style="color: white; border-bottom: 3px solid white; font-family: roboto;">Inicio</a>
-        <a class="nav-item is-tab" routerLink="/productos" routerLinkActive="active">Productos</a>
-        <a class="nav-item is-tab">Casos</a>
-        <a class="nav-item is-tab">Ayuda</a>
-        <a class="nav-item is-tab">Datos</a>
+        <a class="nav-item is-tab is-active item1" routerLink="/" routerLinkActive="active" style="color: white; border-bottom: 3px solid white; font-family: roboto;"><p>{{ 'components.header.header.nav.div.nav-menu.a.item1.p.content' | translate }}</p></a>
+        <a class="nav-item is-tab item2" routerLink="/productos" routerLinkActive="active"><p>{{ 'components.header.header.nav.div.nav-menu.a.item2.p.content' | translate }}</p></a>
+        <a class="nav-item is-tab item3">Casos</a>
+        <a class="nav-item is-tab item4">Ayuda</a>
+        <a class="nav-item is-tab item5">Datos</a>
       </div>
     </div>
   </nav>
 </header>
+<select #languages (change)="changeLanguage(languages.value)">
+      <option *ngFor="let langs of available_languages" value="{{langs}}" [selected] = "langs == current_language">{{langs}}</option>
+</select>
+<p>{{ 'components.header.p.content' | translate }}</p>
