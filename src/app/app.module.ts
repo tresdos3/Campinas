@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductoComponent } from './producto/producto.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TextoPipe } from './pipes/texto.pipe';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/languages', '.json');
@@ -22,13 +24,17 @@ export function createTranslateLoader(http: Http) {
     HeaderComponent,
     FooterComponent,
     ProductoComponent,
-    TextoPipe
+    TextoPipe,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'productos', component: ProductoComponent }
+      { path: 'productos', component: ProductoComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'dashboard', component : DashboardComponent }
     ]),
     HttpModule,
     TranslateModule.forRoot({
