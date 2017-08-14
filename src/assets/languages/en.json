@@ -1,0 +1,52 @@
+{
+    "components": {
+        "header": {
+            "p": {
+                "content": "Hello"
+            },
+            "header": {
+                "nav": {
+                    "p": {
+                        "content": "Hello"
+                    },
+                    "div.nav-menu": {
+                        "p": {
+                            "content": "Hello"
+                        },
+                        "a.item1": {
+                            "p": {
+                                "content": "Home"
+                            }
+                        },
+                        "a.item2": {
+                            "p": {
+                                "content": "Products"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "dashboard":{
+            "main":{
+                "section":{
+                    "div.container":{
+                        "div.heading":{
+                            "h1.title":{
+                                "content": "Welcome Administrador"
+                            },
+                             "h2.subtitle": {
+                                "content": "Select your language"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "settings":{
+            "h2.subtitle":{
+                "content":"Select Your Language"
+            }
+        }
+    }
+}

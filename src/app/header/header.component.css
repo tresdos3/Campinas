@@ -1,0 +1,21 @@
+a.nav-item{
+    /* background: white; */
+     color: white; 
+}
+a.nav-item :hover{
+    /* background: white; */
+     color: white; 
+}
+.nav-toggle:hover {
+    background-color: #850421;
+    border: 1px solid white;
+}
+.nav-toggle span{
+    background: white;
+}
+element.style {
+    width: 100px;
+}
+.nav-item img {
+    max-height: 3rem;
+}

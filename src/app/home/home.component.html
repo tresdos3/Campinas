@@ -1,0 +1,14 @@
+ <app-header></app-header>
+<!-- <app-home></app-home> -->
+{{ Valor | texto : 'allfirtsupper' }}
+
+<owl-carousel
+     [options]="{items: 3, dots: false, navigation: false}"
+     [items]="images"
+     [carouselClasses]="['owl-theme', 'row', 'sliding']">
+     <div class="item" *ngFor="let image of images;let i = index">
+         <h1>{{ image }}</h1>
+         <!-- <div class="thumbnail-image" [ngStyle]="{'background': 'url('abc.jpg')no-repeat scroll center center / 80px 80px'}"></div> -->
+     </div>
+ </owl-carousel>
+<app-footer></app-footer> 

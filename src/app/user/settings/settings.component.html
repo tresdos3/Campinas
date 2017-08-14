@@ -1,0 +1,4 @@
+
+<select #languages (change)="changeLanguage(languages.value)">
+      <option *ngFor="let langs of available_languages" value="{{langs}}" [selected] = "current_language == langs">{{langs}}</option>
+</select>

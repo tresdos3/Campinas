@@ -1,0 +1,30 @@
+<header>
+  <div class="container has-text-centered" style="padding-top:10px; padding-bottom:10px;">
+    <figure>
+      <img src="assets/img/logo1.png" alt="" width="200px">
+    </figure>
+  </div>
+  <nav class="nav has-shadow" style="background-color: #850421;height: 70px;">
+    <div class="container">
+      <div class="nav-left">
+        <a class="nav-item">
+                <img src="assets/img/logo.png" alt="Bulma logo" style="width: 100px;">
+            </a>
+      </div>
+      <span class="nav-toggle burger" style="margin-top:10px">
+                <span></span>
+                <span></span>
+                <span></span>
+      </span>
+      <div class="nav-right nav-menu" style="padding: 15px; background-color: #850421;">
+        <a class="nav-item is-tab item1" routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"><p>{{ 'components.header.header.nav.div.nav-menu.a.item1.p.content' | translate }}</p></a>
+        <a class="nav-item is-tab item2" routerLink="/productos" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"><p>{{ 'components.header.header.nav.div.nav-menu.a.item2.p.content' | translate }}</p></a>
+        <a class="nav-item is-tab item3">Casos</a>
+        <a class="nav-item is-tab item4">Ayuda</a>
+        <a class="nav-item is-tab item5">Datos</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<p>{{ 'components.header.p.content' | translate }}</p>
+
