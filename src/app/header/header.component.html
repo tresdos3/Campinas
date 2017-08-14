@@ -11,14 +11,14 @@
                 <img src="assets/img/logo.png" alt="Bulma logo" style="width: 100px;">
             </a>
       </div>
-      <span class="nav-toggle" style="margin-top:10px">
+      <span class="nav-toggle burger" style="margin-top:10px">
                 <span></span>
                 <span></span>
                 <span></span>
       </span>
       <div class="nav-right nav-menu" style="padding: 15px; background-color: #850421;">
-        <a class="nav-item is-tab is-active item1" routerLink="/" routerLinkActive="active" style="color: white; border-bottom: 3px solid white; font-family: roboto;"><p>{{ 'components.header.header.nav.div.nav-menu.a.item1.p.content' | translate }}</p></a>
-        <a class="nav-item is-tab item2" routerLink="/productos" routerLinkActive="active"><p>{{ 'components.header.header.nav.div.nav-menu.a.item2.p.content' | translate }}</p></a>
+        <a class="nav-item is-tab item1" routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"><p>{{ 'components.header.header.nav.div.nav-menu.a.item1.p.content' | translate }}</p></a>
+        <a class="nav-item is-tab item2" routerLink="/productos" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"><p>{{ 'components.header.header.nav.div.nav-menu.a.item2.p.content' | translate }}</p></a>
         <a class="nav-item is-tab item3">Casos</a>
         <a class="nav-item is-tab item4">Ayuda</a>
         <a class="nav-item is-tab item5">Datos</a>
@@ -30,3 +30,4 @@
       <option *ngFor="let langs of available_languages" value="{{langs}}" [selected] = "langs == current_language">{{langs}}</option>
 </select>
 <p>{{ 'components.header.p.content' | translate }}</p>
+

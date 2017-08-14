@@ -5,12 +5,13 @@ const del = require('del');
 const fs = require('fs');
 
 gulp.task('default', function(callback) {
-    runSequence('directoy','firebase','init','build','copy','deploy', callback);
+    runSequence('directoy','interac','init','build','copy','deploy', callback);
     // runSequence('build','copy','deploy', callback);
 });
 gulp.task('directoy', shell.task('mkdir deploy'));
-gulp.task('firebase', shell.task('firebase login'));
+gulp.task('interac', shell.task('firebase login --interactive'));
+// gulp.task('firebase', shell.task('firebase login'));
 gulp.task('init', shell.task('cd deploy && firebase init'));
 gulp.task('build', shell.task('ng build --aot'));
-gulp.task('copy', shell.task('cp dist/* deploy/public'));
+gulp.task('copy', shell.task('cp -r dist\* deploy\public'));
 gulp.task('deploy', shell.task('cd deploy && firebase deploy'));

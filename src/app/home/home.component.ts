@@ -9,6 +9,7 @@ import { Title }     from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
 
   Valor: String = 'estas es la pagina de inicio';
+  images: Array<string> = ['sports', 'abstract', 'people', 'transport', 'city', 'technics', 'nightlife', 'animals'];
   constructor(private titulo: Title) {
     this.titulo.setTitle('Inicio');
    }
