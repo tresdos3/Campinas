@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { SettingsService } from "../service/settings.service";
+=======
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
 
 @Component({
   selector: 'app-dashboard',
@@ -8,9 +11,13 @@ import { SettingsService } from "../service/settings.service";
 })
 export class DashboardComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor(private settings: SettingsService) {
     settings.controlLanguage();
   }
+=======
+  constructor() { }
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
 
   ngOnInit() {
     this.MenuFull();

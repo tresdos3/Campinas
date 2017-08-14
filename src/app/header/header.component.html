@@ -26,5 +26,11 @@
     </div>
   </nav>
 </header>
+<<<<<<< HEAD
+=======
+<select #languages (change)="changeLanguage(languages.value)">
+      <option *ngFor="let langs of available_languages" value="{{langs}}" [selected] = "langs == current_language">{{langs}}</option>
+</select>
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
 <p>{{ 'components.header.p.content' | translate }}</p>
 

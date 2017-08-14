@@ -12,15 +12,23 @@ export class SettingsService {
   getCurrentLanguage() {
     return this.current_language;
   }
+<<<<<<< HEAD
   getStoredLanguage() {
     return localStorage.getItem('language');
+=======
+  setCurrentLanguage(current_language: string) {
+    this.current_language = current_language;
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
   }
   getDefaultLanguage() {
     return this.default_language;
   }
+<<<<<<< HEAD
   getAvailable_Languages(){
     return this.available_languages;
   }
+=======
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
   controlLanguage() {
     this.translate.setDefaultLang(this.default_language);
     let storage_language = localStorage.getItem('language');
@@ -35,12 +43,19 @@ export class SettingsService {
     this.translate.use(storage_language);
     this.current_language = storage_language;
   }
+<<<<<<< HEAD
   checkLanguageAvailability(language_evaluate: string) {
 
     let check: boolean = false;
     this.available_languages.forEach(language => {
       if (language == language_evaluate) {
         // console.log('encontrado');
+=======
+  checkLanguageAvailability(language_evaluate) {
+    let check: boolean = false;
+    this.available_languages.forEach(language => {
+      if (language == language_evaluate) {
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
         check = true;
         return;
       }

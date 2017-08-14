@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 a.nav-item{
     /* background: white; */
      color: white; 
@@ -18,4 +19,26 @@ element.style {
 }
 .nav-item img {
     max-height: 3rem;
+=======
+a.nav-item{
+    /* background: white; */
+     color: white; 
+}
+a.nav-item :hover{
+    /* background: white; */
+     color: white; 
+}
+.nav-toggle:hover {
+    background-color: #850421;
+    border: 1px solid white;
+}
+.nav-toggle span{
+    background: white;
+}
+element.style {
+    width: 100px;
+}
+.nav-item img {
+    max-height: 3rem;
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
 }

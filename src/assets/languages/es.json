@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "components": {
         "header": {
@@ -49,4 +50,36 @@
             }
         }
     }
+=======
+{
+    "components": {
+        "header": {
+            "p": {
+                "content": "Hola"
+            },
+            "header": {
+                "nav": {
+                    "p": {
+                        "content": "Hola"
+                    },
+                    "div.nav-menu": {
+                        "p": {
+                            "content": "Hola"
+                        },
+                        "a.item1": {
+                            "p": {
+                                "content": "Inicio"
+                            }
+                        },
+                        "a.item2": {
+                            "p": {
+                                "content": "Productos"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
 }

@@ -9,11 +9,20 @@ import { SettingsService } from '../service/settings.service';
 })
 export class HeaderComponent implements OnInit {
 
+<<<<<<< HEAD
   // current_language: string = 'es';
   // default_language: string = 'es';
   // available_languages: Array<string> = ['es', 'en', 'pt'];
   private Language: string;
   constructor(private settings: SettingsService) {
+=======
+  current_language: string = 'es';
+  default_language: string = 'es';
+  available_languages: Array<string> = ['es', 'en', 'pt'];
+  private Language: string;
+  constructor(private translate: TranslateService, private settings: SettingsService) {
+    console.log(settings);
+>>>>>>> 9f714dc4a339608272edb07e476a195e21d4a859
     settings.controlLanguage();
     // translate.setDefaultLang(this.default_language);
     // let storage_language = localStorage.getItem('language');
